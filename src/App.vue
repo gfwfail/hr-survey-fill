@@ -344,7 +344,7 @@ export default {
             let slug = url[url.length - 1]
             var self = this
             this.$http({
-                url: 'http://hr.dev/api/' + slug,
+                url: 'http://api.man.land/api/' + slug,
                 method: 'GET'
             }).then(function(response) {
                 self.sections = response.data.questions.sections
